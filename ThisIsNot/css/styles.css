@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'ExposeRegular';
+    src: url('../fonts/Expose/Expose-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comico';
+    src: url('../fonts/Comico/Comico-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Crang';
+    src: url('../fonts/Crang/Crang.ttf') format('truetype');
+}
+
+body {
+    font-family: 'ExposeRegular';
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    height: 20vh;
+    width: auto;
+    background-color: black;
+    display: flex;
+}
+
+#logo-container {
+    height: 20vh;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+}
+
+#logoText {
+    font-family: 'Crang';
+    color: white;
+    font-size: 70px;
+    margin-right: 10px;
+}
+
+
+#title-container{
+    background-color: white;
+    height: 20vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-family: 'Comico';
+    font-size: 6em;
+    text-align: center; 
+    margin: 0; 
+}
+
+#titleSpan {
+    font-family: 'ExposeRegular';
+    font-size: 1.1em;
+    background-color: yellow;
+    transition: font-size 0.5s; /* Transición de cambio de tamaño */
+}
+
+#titleSpan:hover {
+    background-color: red;
+    font-size: 2em; /* Tamaño al pasar el cursor sobre el span */
+    animation: growAnimation 8s infinite; /* Aplica una animación de crecimiento */
+}
+
+@keyframes growAnimation {
+    0% {
+        font-size: 2em; /* Tamaño inicial */
+    }
+
+    100% {
+        font-size: 30em; /* Tamaño final */
+    }
+}
+
+nav {
+    height: 20vh;
+    width: 20%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+nav ul {
+    color: white;
+    display:flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.liNav {
+    margin: 0 10px; /* Añade espacio entre los elementos de la lista */
+}
+
+.liNav a {
+    text-decoration: none;
+    color: white;
+}
+
+dialog::backdrop {
+    background: rgba(234, 206, 227, 0.9);
+  }
+
+  .panel{
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+    transition: transform 300ms;
+    z-index:-1;
+  }
+  .panel div{ 
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: beige;
+    width: 400px;
+    height:400px;
+    z-index:1000;
+  }
+  .panel[data-on='on'] 
+  {
+    transform: scale(1);
+  }
+  .panel[data-on='off'] 
+  {
+    transform: scale(0);
+  } */

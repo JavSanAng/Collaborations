@@ -37,7 +37,13 @@
         <img src="">
     </div>
     <div id="divQuotes">
-        <h3 id="quotes">Filosofia BARATA </h3>
+        <button id="btnQuotes" onclick="window.modal2.showModal();"> Wise WORD(L)s</button>
+    <dialog id="modal2">
+        <h2> NOT west WORDs</h2>
+        <p id="quotes"></p>
+        <img src="/img/kanyeJisus.jpeg">
+        <button onclick="window.modal2.close();">Bye KANYai</button>
+    </dialog>
     </div>
     <div id="textFlotant">
         <h2>This is not a IMAGE</h2>
@@ -55,9 +61,11 @@
         Bastard 
         </button> 
         <div  class="panel" id="aviso" data-on="off" onclick="this.setAttribute('data-on','off')">
-          <div>
-          <p>NOT CLOSE this</p>
-          </div>
+            <div>
+            <p>NOT CLOSE this</p>
+            </div>
         </div>
+</main>
+<script src="./js/script.js"></script>
 </body>
 </html>
